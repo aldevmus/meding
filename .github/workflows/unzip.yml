@@ -3,7 +3,10 @@ name: Unzip uploaded files
 on:
   push:
     paths:
-      - "*.zip"   # يشتغل فقط لما يتغير/ينرفع ملف ZIP في المستودع
+      - "*.zip"   # يشتغل فقط إذا رفعت ملف ZIP في الجذر
+
+permissions:
+  contents: write   # مهم! يعطي الإذن للبوت عشان يعمل push
 
 jobs:
   unzip:
@@ -13,10 +16,11 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Extract all zip files
+      - name: Extract zip files
         run: |
           for f in *.zip; do
             [ -f "$f" ] || continue
+            echo "Extracting $f ..."
             unzip -o "$f" -d .
             rm "$f"
           done
@@ -26,5 +30,4 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "Unzipped uploaded file(s)"
-          git push
+          git commit -m "Unzipped uploaded file(s)" || echo "No changes
