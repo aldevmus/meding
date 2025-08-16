@@ -3,10 +3,10 @@ name: Unzip uploaded files
 on:
   push:
     paths:
-      - "*.zip"   # يشتغل فقط إذا رفعت ملف ZIP في الجذر
+      - "*.zip"
 
 permissions:
-  contents: write   # مهم! يعطي الإذن للبوت عشان يعمل push
+  contents: write
 
 jobs:
   unzip:
@@ -14,20 +14,29 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Extract zip files
+      - name: Find and unzip all zip files
+        shell: bash
         run: |
+          shopt -s nullglob
           for f in *.zip; do
-            [ -f "$f" ] || continue
-            echo "Extracting $f ..."
-            unzip -o "$f" -d .
+            echo "📦 Found ZIP: $f"
+            unzip -o "$f" -d extracted_tmp || exit 1
             rm "$f"
           done
+
+      - name: Move extracted files to repo root
+        run: |
+          if [ -d extracted_tmp ]; then
+            cp -r extracted_tmp/* .
+            rm -rf extracted_tmp
+          fi
 
       - name: Commit and push extracted files
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "Unzipped uploaded file(s)" || echo "No changes
+          git add -A
+          git commit -m "✅ Auto-unzipped uploaded ZIP(s)" || echo "No changes to commit"
+          git push
