@@ -1,0 +1,30 @@
+name: Unzip uploaded files
+
+on:
+  push:
+    paths:
+      - "*.zip"   # يشتغل فقط لما يتغير/ينرفع ملف ZIP في المستودع
+
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Extract all zip files
+        run: |
+          for f in *.zip; do
+            [ -f "$f" ] || continue
+            unzip -o "$f" -d .
+            rm "$f"
+          done
+
+      - name: Commit and push extracted files
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Unzipped uploaded file(s)"
+          git push
