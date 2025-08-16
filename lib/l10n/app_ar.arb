@@ -1,0 +1,194 @@
+{
+
+    "onboardingSlide1Title": "مكتبتك الطبية الكاملة",
+
+    "onboardingSlide1Description": "وصول فوري لآلاف الكورسات، الملخصات، والدروس المصورة.",
+
+    "onboardingSlide2Title": "مسار تعليمي ذكي",
+
+    "onboardingSlide2Description": "تتبع تقدمك، خض اختبارات مخصصة، وحقق أهدافك بكفاءة.",
+
+    "onboardingSlide3Title": "مجتمعك الطبي الداعم",
+
+    "onboardingSlide3Description": "تواصل مع زملائك، شارك خبراتك، وتعلم من أفضل الأساتذة.",
+
+    "onboardingButton": "هيا بنا نبدأ",
+
+    "login": "تسجيل الدخول",
+
+    "createAccount": "إنشاء حساب",
+
+    "email": "البريد الإلكتروني",
+
+    "password": "كلمة المرور",
+
+    "welcomeBack": "أهلاً بعودتك!",
+
+    "loginToContinue": "سجل الدخول لمتابعة رحلتك.",
+
+    "forgotPassword": "هل نسيت كلمة المرور؟",
+
+    "noAccount": "ليس لديك حساب؟",
+
+    "createOneNow": "أنشئ حساباً الآن",
+
+    "joinMeding": "الانضمام إلى Meding",
+
+    "chooseAccountType": "اختر نوع حسابك وأكمل البيانات.",
+
+    "student": "طالب",
+
+    "professorAdmin": "أستاذ / إداري",
+
+    "fullName": "الاسم الكامل",
+
+    "studentId": "رقم تسجيل الطالب",
+
+    "dateOfBirth": "تاريخ الميلاد",
+
+    "chooseSpecialty": "اختر التخصص",
+
+    "specialtyMedicine": "طب",
+
+    "specialtyDentistry": "طب أسنان",
+
+    "specialtyPharmacy": "صيدلة",
+
+    "chooseYear": "اختر السنة الدراسية",
+
+    "year1": "السنة الأولى",
+
+    "year2": "السنة الثانية",
+
+    "year3": "السنة الثالثة",
+
+    "year4": "السنة الرابعة",
+
+    "year5": "السنة الخامسة",
+
+    "year6": "السنة السادسة",
+
+    "year7": "السنة السابعة",
+
+    "createStudentAccount": "إنشاء حساب طالب",
+
+    "specialRegistration": "تسجيل خاص",
+
+    "specialRegistrationInfo": "لتسجيل حساب أستاذ أو إداري، يرجى التواصل مباشرة مع إدارة التطبيق للحصول على صلاحيات الدخول.",
+
+    "contactAdmin": "التواصل مع الإدارة",
+
+    "alreadyHaveAccount": "لديك حساب بالفعل؟",
+
+    "loginNow": "سجل الدخول",
+
+    "nextButton": "التالي",
+
+    "iAgreeTo": "أوافق على",
+
+    "termsOfUse": "شروط الاستخدام",
+
+    "and": "و",
+
+    "privacyPolicy": "سياسة الخصوصية",
+
+    "validatorRequiredField": "هذا الحقل مطلوب.",
+
+    "validatorFullNameHint": "الرجاء إدخال الاسم الكامل.",
+
+    "validatorFullNameInvalid": "الرجاء استخدام الأحرف الإنجليزية فقط.",
+
+    "validatorStudentIdHint": "الرجاء إدخال رقم التسجيل.",
+
+    "validatorStudentIdInvalid": "الرجاء إدخال أرقام فقط.",
+
+    "validatorPasswordHint": "الرجاء إدخال كلمة المرور.",
+
+    "validatorPasswordLength": "يجب أن تكون كلمة المرور 8 أحرف على الأقل.",
+
+    "passwordStrength": "قوة كلمة المرور",
+
+    "passwordStrengthWeak": "ضعيفة",
+
+    "passwordStrengthMedium": "متوسطة",
+
+    "passwordStrengthStrong": "قوية",
+
+    "firebaseErrorWeakPassword": "كلمة المرور التي أدخلتها ضعيفة.",
+
+    "firebaseErrorEmailInUse": "هذا البريد الإلكتروني مسجل بالفعل.",
+
+    "firebaseErrorGeneric": "حدث خطأ ما، يرجى المحاولة مرة أخرى.",
+
+    "validatorEmailInvalid": "الرجاء إدخال بريد إلكتروني صحيح.",
+
+    "validatorDateRequired": "الرجاء اختيار تاريخ ميلادك.",
+
+    "validatorSpecialtyRequired": "الرجاء اختيار التخصص.",
+
+    "validatorYearRequired": "الرجاء اختيار السنة الدراسية.",
+
+    "validatorAgeRequirement": "يجب أن يكون عمرك 17 سنة على الأقل.",
+
+    "accountCreatedSuccessfully": "تم إنشاء حسابك بنجاح! يرجى تفعيل إيميلك.",
+
+    "gender": "الجنس",
+
+    "male": "ذكر",
+
+    "female": "أنثى",
+
+    "validatorGenderRequired": "الرجاء اختيار الجنس.",
+
+    "loginSuccess": "تم تسجيل الدخول بنجاح.",
+
+    "loginErrorInvalid": "البريد الإلكتروني أو كلمة المرور غير صحيحة.",
+
+    "resetPasswordLink": "إرسال رابط إعادة التعيين",
+
+    "backToLogin": "العودة لتسجيل الدخول",
+
+    "passwordResetEmailSent": "تم إرسال رابط إعادة تعيين كلمة المرور إلى بريدك الإلكتروني.",
+
+    "userNotFound": "لا يوجد حساب مسجل بهذا البريد الإلكتروني.",
+
+    "validatorPasswordLengthBetween": "يجب أن تكون كلمة السر بين 8 و 20 حرفاً.",
+
+    "validatorPasswordUppercase": "يجب أن تحتوي على حرف كبير واحد على الأقل.",
+
+    "validatorPasswordNumber": "يجب أن تحتوي على رقم واحد على الأقل.",
+
+    "validatorFullNameInvalidFormat": "الرجاء إدخال اسمك الأول والأخير.",
+
+    "validatorPasswordLowercase": "يجب أن تحتوي كلمة السر على حرف صغير واحد على الأقل.",
+
+    "nav_home": "الرئيسية",
+
+    "nav_community": "مجتمع",
+
+    "nav_forum": "المنتدى",
+
+    "nav_profile": "الحساب",
+
+    "search_placeholder": "مرحبا بك! ماذا تريد أن تدرس اليوم؟",
+
+    "cancel_button": "إلغاء",
+
+    "view_all": "عرض الكل",
+
+    "section_exclusive": "حصري !",
+
+    "section_trending": "ملفات رائجة !",
+
+    "section_suggested_lessons": "دروس مقترحة!",
+
+    "section_suggested_courses": "كورسات مقترحة!",
+
+    "action_activate_sub_title": "تفعيل الاشتراك",
+
+    "action_activate_sub_subtitle": "للوصول الكامل لميزات التطبيق، يرجى تفعيل اشتراكك.",
+
+    "action_activate_now": "تفعيل الآن"
+
+}
+

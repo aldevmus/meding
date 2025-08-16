@@ -1,0 +1,160 @@
+name: meding_app
+
+description: An application for medical students, providing lessons, courses, and community features.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+
+  sdk: '>=3.0.0 <4.0.0'
+
+#================ DEPENDENCIES ================#
+
+dependencies:
+
+  flutter:
+
+    sdk: flutter
+
+  flutter_localizations: # للترجمة
+
+    sdk: flutter
+
+  # Firebase Services
+
+  firebase_core: ^2.32.0
+
+  firebase_auth: ^4.20.0
+
+  cloud_firestore: ^4.17.5
+
+  firebase_analytics: ^10.10.7
+
+  # State Management
+
+  provider: ^6.1.2
+
+  # UI & Utilities
+
+  google_fonts: ^6.2.1
+
+  flutter_svg: ^2.0.10+1
+
+  shared_preferences: ^2.2.3
+
+  smooth_page_indicator: ^1.1.0
+
+  url_launcher: ^6.3.0
+
+  intl: ^0.19.0
+
+  cupertino_icons: ^1.0.6
+
+  dotted_border: ^2.0.1
+
+  app_links: ^4.0.0
+
+#================ DEV DEPENDENCIES ================#
+
+dev_dependencies:
+
+  flutter_test:
+
+    sdk: flutter
+
+  # أدوات مساعدة لعملية التطوير
+
+  flutter_lints: ^4.0.0
+
+  flutter_native_splash: ^2.4.0
+
+  flutter_launcher_icons: ^0.13.1
+
+  build_runner: ^2.4.13
+
+#================ FLUTTER CONFIGURATION ================#
+
+flutter:
+
+  uses-material-design: true
+
+  generate: true
+
+  # --- الأصول (Assets) ---
+
+  assets:
+
+    - assets/svgs/
+
+    - assets/icon/
+
+  # --- الخطوط (Fonts) ---
+
+  # تم إضافة هذا القسم بناءً على طلبك
+
+  fonts:
+
+    - family: Cairo
+
+      fonts:
+
+        - asset: fonts/cairo/Cairo-ExtraLight.ttf
+
+          weight: 200
+
+        - asset: fonts/cairo/Cairo-Light.ttf
+
+          weight: 300
+
+        - asset: fonts/cairo/Cairo-Regular.ttf
+
+          weight: 400
+
+        - asset: fonts/cairo/Cairo-Medium.ttf
+
+          weight: 500
+
+        - asset: fonts/cairo/Cairo-SemiBold.ttf
+
+          weight: 600
+
+        - asset: fonts/cairo/Cairo-Bold.ttf
+
+          weight: 700
+
+        - asset: fonts/cairo/Cairo-ExtraBold.ttf
+
+          weight: 800
+
+        - asset: fonts/cairo/Cairo-Black.ttf
+
+          weight: 900
+
+    - family: Inter
+
+      fonts:
+
+        - asset: fonts/inter/Inter-VariableFont_opsz,wght.ttf
+
+#================ NATIVE SPLASH CONFIGURATION ================#
+
+flutter_native_splash:
+
+  color: "#EBF8FF"
+
+  image: assets/svgs/meding_logo.svg
+
+  android_12:
+
+    color: "#EBF8FF"
+
+    image: assets/svgs/meding_logo.svg
+
+#================ LAUNCHER ICONS CONFIGURATION ================#
+
+flutter_launcher_icons:
+
+  android: true
+

@@ -1,0 +1,194 @@
+{
+
+    "onboardingSlide1Title": "Votre bibliothèque médicale complète",
+
+    "onboardingSlide1Description": "Accès instantané à des milliers de cours, résumés et leçons vidéo.",
+
+    "onboardingSlide2Title": "Parcours d'apprentissage intelligent",
+
+    "onboardingSlide2Description": "Suivez vos progrès, passez des quiz personnalisés et atteignez vos objectifs efficacement.",
+
+    "onboardingSlide3Title": "Votre communauté médicale de soutien",
+
+    "onboardingSlide3Description": "Connectez-vous avec des collègues, partagez vos expériences et apprenez des meilleurs professeurs.",
+
+    "onboardingButton": "Commençons",
+
+    "login": "Connexion",
+
+    "createAccount": "Créer un compte",
+
+    "email": "Adresse e-mail",
+
+    "password": "Mot de passe",
+
+    "welcomeBack": "Content de vous revoir !",
+
+    "loginToContinue": "Connectez-vous pour continuer votre parcours.",
+
+    "forgotPassword": "Mot de passe oublié ?",
+
+    "noAccount": "Vous n'avez pas de compte ?",
+
+    "createOneNow": "Créez-en un maintenant",
+
+    "joinMeding": "Rejoindre Meding",
+
+    "chooseAccountType": "Choisissez votre type de compte et complétez les informations.",
+
+    "student": "Étudiant",
+
+    "professorAdmin": "Professeur / Admin",
+
+    "fullName": "Nom complet",
+
+    "studentId": "Numéro d'inscription étudiant",
+
+    "dateOfBirth": "Date de naissance",
+
+    "chooseSpecialty": "Choisissez la spécialité",
+
+    "specialtyMedicine": "Médecine",
+
+    "specialtyDentistry": "Médecine dentaire",
+
+    "specialtyPharmacy": "Pharmacie",
+
+    "chooseYear": "Choisissez l'année d'études",
+
+    "year1": "Première année",
+
+    "year2": "Deuxième année",
+
+    "year3": "Troisième année",
+
+    "year4": "Quatrième année",
+
+    "year5": "Cinquième année",
+
+    "year6": "Sixième année",
+
+    "year7": "Septième année",
+
+    "createStudentAccount": "Créer un compte étudiant",
+
+    "specialRegistration": "Inscription spéciale",
+
+    "specialRegistrationInfo": "Pour créer un compte professeur ou administrateur, veuillez contacter directement l'administration de l'application pour obtenir les autorisations d'accès.",
+
+    "contactAdmin": "Contacter l'administration",
+
+    "alreadyHaveAccount": "Vous avez déjà un compte ?",
+
+    "loginNow": "Se connecter",
+
+    "nextButton": "Suivant",
+
+    "iAgreeTo": "J'accepte les",
+
+    "termsOfUse": "Conditions d'utilisation",
+
+    "and": "et la",
+
+    "privacyPolicy": "Politique de confidentialité",
+
+    "validatorRequiredField": "Ce champ est requis.",
+
+    "validatorFullNameHint": "Veuillez saisir votre nom complet.",
+
+    "validatorFullNameInvalid": "Veuillez utiliser uniquement des lettres.",
+
+    "validatorStudentIdHint": "Veuillez saisir votre numéro d'inscription.",
+
+    "validatorStudentIdInvalid": "Veuillez saisir uniquement des chiffres.",
+
+    "validatorPasswordHint": "Veuillez saisir un mot de passe.",
+
+    "validatorPasswordLength": "Le mot de passe doit contenir au moins 8 caractères.",
+
+    "passwordStrength": "Force du mot de passe",
+
+    "passwordStrengthWeak": "Faible",
+
+    "passwordStrengthMedium": "Moyen",
+
+    "passwordStrengthStrong": "Fort",
+
+    "firebaseErrorWeakPassword": "Le mot de passe fourni est trop faible.",
+
+    "firebaseErrorEmailInUse": "Cette adresse e-mail est déjà utilisée.",
+
+    "firebaseErrorGeneric": "Une erreur est survenue. Veuillez réessayer.",
+
+    "validatorEmailInvalid": "Veuillez saisir une adresse e-mail valide.",
+
+    "validatorDateRequired": "Veuillez sélectionner votre date de naissance.",
+
+    "validatorSpecialtyRequired": "Veuillez sélectionner la spécialité.",
+
+    "validatorYearRequired": "Veuillez sélectionner l'année d'études.",
+
+    "validatorAgeRequirement": "Vous devez avoir au moins 17 ans.",
+
+    "accountCreatedSuccessfully": "Votre compte a été créé avec succès ! Veuillez vérifier votre e-mail.",
+
+    "gender": "Genre",
+
+    "male": "Homme",
+
+    "female": "Femme",
+
+    "validatorGenderRequired": "Veuillez sélectionner le genre.",
+
+    "loginSuccess": "Connexion réussie.",
+
+    "loginErrorInvalid": "L'e-mail ou le mot de passe est incorrect.",
+
+    "resetPasswordLink": "Envoyer le lien de réinitialisation",
+
+    "backToLogin": "Retour à la connexion",
+
+    "passwordResetEmailSent": "Un lien de réinitialisation du mot de passe a été envoyé à votre e-mail.",
+
+    "userNotFound": "Aucun compte n'est enregistré avec cet e-mail.",
+
+    "validatorPasswordLengthBetween": "Le mot de passe doit contenir entre 8 et 20 caractères.",
+
+    "validatorPasswordUppercase": "Doit contenir au moins une lettre majuscule.",
+
+    "validatorPasswordNumber": "Doit contenir au moins un chiffre.",
+
+    "validatorFullNameInvalidFormat": "Veuillez saisir votre prénom et votre nom.",
+
+    "validatorPasswordLowercase": "Le mot de passe doit contenir au moins une lettre minuscule.",
+
+    "nav_home": "Accueil",
+
+    "nav_community": "Communauté",
+
+    "nav_forum": "Forum",
+
+    "nav_profile": "Profil",
+
+    "search_placeholder": "Bonjour ! Qu'est-ce que vous voulez étudier ?",
+
+    "cancel_button": "Annuler",
+
+    "view_all": "Tout voir",
+
+    "section_exclusive": "Exclusif !",
+
+    "section_trending": "Fichiers Populaires !",
+
+    "section_suggested_lessons": "Leçons Suggérées!",
+
+    "section_suggested_courses": "Cours Suggérés!",
+
+    "action_activate_sub_title": "Activer l'abonnement",
+
+    "action_activate_sub_subtitle": "Pour un accès complet, veuillez activer votre abonnement.",
+
+    "action_activate_now": "Activer"
+
+}
+

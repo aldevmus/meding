@@ -1,0 +1,194 @@
+{
+
+    "onboardingSlide1Title": "Your Complete Medical Library",
+
+    "onboardingSlide1Description": "Instant access to thousands of courses, summaries, and video lessons.",
+
+    "onboardingSlide2Title": "Smart Learning Path",
+
+    "onboardingSlide2Description": "Track your progress, take custom quizzes, and achieve your goals efficiently.",
+
+    "onboardingSlide3Title": "Your Supportive Medical Community",
+
+    "onboardingSlide3Description": "Connect with colleagues, share your experiences, and learn from the best professors.",
+
+    "onboardingButton": "Let's Get Started",
+
+    "login": "Login",
+
+    "createAccount": "Create Account",
+
+    "email": "Email Address",
+
+    "password": "Password",
+
+    "welcomeBack": "Welcome Back!",
+
+    "loginToContinue": "Log in to continue your journey.",
+
+    "forgotPassword": "Forgot Password?",
+
+    "noAccount": "Don't have an account?",
+
+    "createOneNow": "Create one now",
+
+    "joinMeding": "Join Meding",
+
+    "chooseAccountType": "Choose your account type and complete the details.",
+
+    "student": "Student",
+
+    "professorAdmin": "Professor / Admin",
+
+    "fullName": "Full Name",
+
+    "studentId": "Student Registration Number",
+
+    "dateOfBirth": "Date of Birth",
+
+    "chooseSpecialty": "Choose Specialty",
+
+    "specialtyMedicine": "Medicine",
+
+    "specialtyDentistry": "Dentistry",
+
+    "specialtyPharmacy": "Pharmacy",
+
+    "chooseYear": "Choose Academic Year",
+
+    "year1": "First Year",
+
+    "year2": "Second Year",
+
+    "year3": "Third Year",
+
+    "year4": "Fourth Year",
+
+    "year5": "Fifth Year",
+
+    "year6": "Sixth Year",
+
+    "year7": "Seventh Year",
+
+    "createStudentAccount": "Create Student Account",
+
+    "specialRegistration": "Special Registration",
+
+    "specialRegistrationInfo": "To register a professor or admin account, please contact the application administration directly to obtain login credentials.",
+
+    "contactAdmin": "Contact Administration",
+
+    "alreadyHaveAccount": "Already have an account?",
+
+    "loginNow": "Log in",
+
+    "nextButton": "Next",
+
+    "iAgreeTo": "I agree to the",
+
+    "termsOfUse": "Terms of Use",
+
+    "and": "and",
+
+    "privacyPolicy": "Privacy Policy",
+
+    "validatorRequiredField": "This field is required.",
+
+    "validatorFullNameHint": "Please enter your full name.",
+
+    "validatorFullNameInvalid": "Please use English letters only.",
+
+    "validatorStudentIdHint": "Please enter your student ID.",
+
+    "validatorStudentIdInvalid": "Please enter numbers only.",
+
+    "validatorPasswordHint": "Please enter a password.",
+
+    "validatorPasswordLength": "Password must be at least 8 characters long.",
+
+    "passwordStrength": "Password Strength",
+
+    "passwordStrengthWeak": "Weak",
+
+    "passwordStrengthMedium": "Medium",
+
+    "passwordStrengthStrong": "Strong",
+
+    "firebaseErrorWeakPassword": "The password provided is too weak.",
+
+    "firebaseErrorEmailInUse": "This email is already in use.",
+
+    "firebaseErrorGeneric": "An error occurred. Please try again.",
+
+    "validatorEmailInvalid": "Please enter a valid email address.",
+
+    "validatorDateRequired": "Please select your date of birth.",
+
+    "validatorSpecialtyRequired": "Please select the specialty.",
+
+    "validatorYearRequired": "Please select the academic year.",
+
+    "validatorAgeRequirement": "You must be at least 17 years old.",
+
+    "accountCreatedSuccessfully": "Your account has been created successfully! Please verify your email.",
+
+    "gender": "Gender",
+
+    "male": "Male",
+
+    "female": "Female",
+
+    "validatorGenderRequired": "Please select a gender.",
+
+    "loginSuccess": "Login successful.",
+
+    "loginErrorInvalid": "Invalid email or password.",
+
+    "resetPasswordLink": "Send Reset Link",
+
+    "backToLogin": "Back to Login",
+
+    "passwordResetEmailSent": "A password reset link has been sent to your email.",
+
+    "userNotFound": "No account is registered with this email.",
+
+    "validatorPasswordLengthBetween": "Password must be between 8 and 20 characters.",
+
+    "validatorPasswordUppercase": "Must contain at least one uppercase letter.",
+
+    "validatorPasswordNumber": "Must contain at least one number.",
+
+    "validatorFullNameInvalidFormat": "Please enter your first and last name.",
+
+    "validatorPasswordLowercase": "Password must contain at least one lowercase letter.",
+
+    "nav_home": "Home",
+
+    "nav_community": "Community",
+
+    "nav_forum": "Forum",
+
+    "nav_profile": "Profile",
+
+    "search_placeholder": "Hello! What do you want to study today?",
+
+    "cancel_button": "Cancel",
+
+    "view_all": "View All",
+
+    "section_exclusive": "Exclusive !",
+
+    "section_trending": "Trending Files !",
+
+    "section_suggested_lessons": "Suggested Lessons!",
+
+    "section_suggested_courses": "Suggested Courses!",
+
+    "action_activate_sub_title": "Activate Subscription",
+
+    "action_activate_sub_subtitle": "For full access to app features, please activate your subscription.",
+
+    "action_activate_now": "Activate Now"
+
+}
+
