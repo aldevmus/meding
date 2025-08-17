@@ -7,8 +7,7 @@ import 'package:meding_app/app/core/theme/app_theme.dart';
 import 'package:meding_app/services/deep_link_service.dart';
 
 import 'package:meding_app/features/splash/presentation/splash_screen.dart';
-
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:meding_app/l10n/generated/app_localizations.dart';
 
 import 'firebase_options.dart';
 

@@ -108,5 +108,18 @@ class DeepLinkService {
 
 }
 
+extension on AppLinks {
+  Future getInitialAppLink() {
+ try {
+      // You can add your logic here if needed before returning null
+    } catch (e) {
+      debugPrint('Error getting initial app link: $e');
+      // Return null in case of an error
+    }
+    // Return a Future that completes with null
+    return Future.value(null);
+  }
+}
+
 
 

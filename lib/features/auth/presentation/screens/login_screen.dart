@@ -10,13 +10,14 @@ import 'package:meding_app/features/auth/presentation/screens/register_screen.da
 
 import 'package:meding_app/features/auth/services/auth_service.dart';
 
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:meding_app/l10n/generated/app_localizations.dart';
 
 import 'package:firebase_auth/firebase_auth.dart';
 
 // TODO: قم باستيراد شاشة Home Screen عندما تصبح جاهزة
 
 import 'package:meding_app/features/splash/presentation/splash_screen.dart';
+
 
 class LoginScreen extends StatefulWidget {
 

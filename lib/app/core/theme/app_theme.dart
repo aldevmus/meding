@@ -186,7 +186,7 @@ class AppTheme {
 
       ),
 
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
 
         color: surfaceColor,
 

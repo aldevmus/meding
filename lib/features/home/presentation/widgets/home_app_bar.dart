@@ -10,7 +10,7 @@ import 'package:meding_app/app/core/theme/app_colors.dart';
 
 import 'package:meding_app/app/core/utils/app_icons.dart';
 
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:meding_app/l10n/generated/app_localizations.dart';
 
 class HomeAppBar extends StatefulWidget implements PreferredSizeWidget {
 

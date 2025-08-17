@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 
 import 'package:dotted_border/dotted_border.dart';
 
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:meding_app/l10n/generated/app_localizations.dart';
 
 import 'package:meding_app/app/core/theme/app_colors.dart';
 
