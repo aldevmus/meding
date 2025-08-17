@@ -888,13 +888,17 @@ if (isButtonEnabled) {
 
     return DottedBorder(
 
-      color: AppColors.primaryBlue.withOpacity(0.4), strokeWidth: 2, borderType: BorderType.RRect, radius: const Radius.circular(12), dashPattern: const [6, 4],
-
+    options: RoundedRectDottedBorderOptions(
+      color: AppColors.primaryBlue.withValues(alpha: 0.4),
+      strokeWidth: 2,
+      radius: const Radius.circular(12),
+      dashPattern: const [6, 4],
+    ),
       child: Container(
 
         padding: const EdgeInsets.all(16),
 
-        decoration: BoxDecoration(color: AppColors.primaryBlueAccent.withOpacity(0.3), borderRadius: BorderRadius.circular(12)),
+        decoration: BoxDecoration(color: AppColors.primaryBlueAccent.withValues(alpha: 0.3), borderRadius: BorderRadius.circular(12)),
 
         child: Column(children: [
 
