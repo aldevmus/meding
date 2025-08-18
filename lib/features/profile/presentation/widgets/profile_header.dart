@@ -16,29 +16,27 @@ class ProfileHeader extends StatelessWidget {
       const ProfileHeader({super.key, required this.user, required this.isMyProfile});
 
         @override
-          Widget build(BuildContext context) {
-              return user.userType == 'publisher'
-                      ? _PublisherHeader(user: user, isMyProfile: isMyProfile)
-                              : _StudentHeader(user: user, isMyProfile: isMyProfile);
+        Widget build(BuildContext context) {
+           return user.userType == 'publisher' ? 
+           _PublisherHeader(user: user, isMyProfile: isMyProfile) : _StudentHeader(user: user, isMyProfile: isMyProfile);
                                 }
                                 }
+         // --- WIDGETS FOR PUBLISHER PROFILE ---
+         class _PublisherHeader extends StatelessWidget {
+           final UserProfile user;
+           final bool isMyProfile;
 
-                                // --- WIDGETS FOR PUBLISHER PROFILE ---
-                                class _PublisherHeader extends StatelessWidget {
-                                  final UserProfile user;
-                                    final bool isMyProfile;
+           const _PublisherHeader({required this.user, required this.isMyProfile});
 
-                                      const _PublisherHeader({required this.user, required this.isMyProfile});
-
-                                        @override
-                                          Widget build(BuildContext context) {
-                                              return Padding(
-                                                    padding: const EdgeInsets.all(16.0),
-                                                          child: Column(
-                                                                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                                                                          children: [
-                                                                                    Row(
-                                                                                                crossAxisAlignment: CrossAxisAlignment.start,
+          @override
+           Widget build(BuildContext context) {
+            return Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+                       Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                                                                                                             children: [
                                                                                                                           CircleAvatar(
                                                                                                                                           radius: 48,

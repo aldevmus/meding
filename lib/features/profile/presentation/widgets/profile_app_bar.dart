@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 import 'package:flutter_svg/flutter_svg.dart';
@@ -25,13 +27,12 @@ class ProfileSliverAppBar extends StatelessWidget {
   });
 
   @override
-
   Widget build(BuildContext context) {
 
+    final isDarkMode = Theme.of(context).brightness == Brightness.dark;
     final iconColor = Theme.of(context).textTheme.bodyLarge?.color;
-
-    
-
+    // this is the semi-transparent color for the glass effect
+    final glassColor = (isDarkMode ? AppColors.darkSurface : Colors.white).withValues(alpha: 0.85);
     // This is the AppBar that will always stay at the top.
 
     return SliverAppBar(
@@ -40,7 +41,7 @@ class ProfileSliverAppBar extends StatelessWidget {
 
       elevation: 0,
 
-      backgroundColor: Theme.of(context).scaffoldBackgroundColor.withOpacity(0.85),
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor.withValues(alpha: 0.85),
 
       centerTitle: true,
 
@@ -75,8 +76,18 @@ class ProfileSliverAppBar extends StatelessWidget {
       ),
 
       actions: _buildActions(context, iconColor),
+         // 'flexibleSpace' is where the background is defined
+         flexibleSpace: ClipRRect(
+           child: BackdropFilter(
+            filter:
+            ImageFilter.blur(sigmaX: 15, sigmaY: 15), // the blur effect
+               child: Container(
+                color: glassColor, // the semi-transparent color
+               ),
 
-    );
+           )    
+         ),
+    ); 
 
   }
 
