@@ -40,8 +40,9 @@ class MedingApp extends StatefulWidget {
 
 class _MedingAppState extends State<MedingApp> with WidgetsBindingObserver {
   Locale? _locale;
-    
-    final DeepLinkService _deepLinkService = DeepLinkService(navigatorKey: navigatorKey);
+
+  final DeepLinkService _deepLinkService =
+      DeepLinkService(navigatorKey: navigatorKey);
 
   void setLocale(Locale locale) {
     setState(() {
@@ -62,7 +63,7 @@ class _MedingAppState extends State<MedingApp> with WidgetsBindingObserver {
   @override
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
- _deepLinkService.dispose();
+    _deepLinkService.dispose();
     super.dispose();
   }
 

@@ -5,7 +5,6 @@ import 'package:app_links/app_links.dart';
 import 'package:flutter/material.dart';
 
 class DeepLinkService {
-
   // مكتبة AppLinks للاستماع للروابط
 
   final AppLinks _appLinks;
@@ -33,37 +32,30 @@ class DeepLinkService {
   /// يجب استدعاؤها عند بدء تشغيل التطبيق.
 
   Future<void> initDeepLinks() async {
-
     // أولاً، نتحقق مما إذا كان التطبيق قد تم فتحه من خلال رابط وهو مغلق
 
     final initialUri = await _appLinks.getInitialAppLink();
 
     if (initialUri != null) {
-
       // إذا وجد رابط، نطبعه ونقوم بمعالجته
 
       debugPrint('App opened from link: $initialUri');
 
       _handleLink(initialUri);
-
     }
 
     // ثانيًا، نبدأ بالاستماع لأي روابط جديدة تصل بينما التطبيق يعمل في الواجهة
 
     _linkSubscription = _appLinks.uriLinkStream.listen((uri) {
-
       debugPrint('Link received while app is open: $uri');
 
       _handleLink(uri);
-
     });
-
   }
 
   /// تقوم هذه الدالة بتحليل الرابط وتحديد الإجراء المطلوب.
 
   void _handleLink(Uri uri) {
-
     debugPrint('--- Handling Link ---');
 
     debugPrint('Path: ${uri.path}');
@@ -93,7 +85,6 @@ class DeepLinkService {
     }
 
     */
-
   }
 
   /// تقوم هذه الدالة بإلغاء الاشتراك في استماع الروابط لمنع تسرب الذاكرة.
@@ -101,16 +92,13 @@ class DeepLinkService {
   /// يجب استدعاؤها عند إغلاق التطبيق.
 
   void dispose() {
-
     _linkSubscription?.cancel();
-
   }
-
 }
 
 extension on AppLinks {
   Future getInitialAppLink() {
- try {
+    try {
       // You can add your logic here if needed before returning null
     } catch (e) {
       debugPrint('Error getting initial app link: $e');
@@ -120,6 +108,3 @@ extension on AppLinks {
     return Future.value(null);
   }
 }
-
-
-

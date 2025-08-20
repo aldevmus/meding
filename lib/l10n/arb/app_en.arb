@@ -188,7 +188,76 @@
 
     "action_activate_sub_subtitle": "For full access to app features, please activate your subscription.",
 
-    "action_activate_now": "Activate Now"
+    "action_activate_now": "Activate Now",
+
+    "communityTitle" : "Community",
+
+    "createPost" : "Create Post",
+
+    "search" : "Search",
+
+    "latest" :"Latest",
+
+    "trending" :"Trending",  
+
+    "following" : "Following",
+
+    "medicine" : "Medicine",
+
+    "pharmacy" : "Pharmacy",
+
+    "dentistry" : "Dentistry",
+
+    "nursing" : "Nursing",
+
+    "discussion" : "Discussion",
+
+    "ask" : "Question",
+
+    "postAuthorTeacher" : "Professor",
+
+    "postAuthorStudent" : "Student",
+
+    "postTagPremium" : "Premium",
+
+    "postLikes" : "Like",
+
+    "postComments" : "Comment",
+
+    "postTimestampNow" : "Now",
+
+    "postTimestampMinutesAgo" : "Minutes ago",
+
+    "postTimestampHoursAgo" : "Hours ago",
+
+    "postTimestampDaysAgo" : "Days ago",
+
+    "viewPostTitle" : "Post",
+
+    "commentsTitle" : "Comments",
+
+    "addCommentHint" : "Add a comment...",
+
+    "createPostTitle" : "Create Post",
+
+    "postFormFieldTitl" : "Title",
+
+    "postFormFieldTitleHint" : "Write a clear title for your post...",
+
+    "postFormFieldContent" : "Content",
+
+    "postFormFieldContentHint" : "Write the details of your post here...",
+
+    "postFormFieldCategory" : "Category",
+
+    "postFormFieldCategoryHint" : "E.g: Pathology, Surgery...",
+
+    "postFormAttachImage" : "Attach Image (optional)",
+
+    "postFormDragOrBrowse" : "Drag & drop an image here or browse",
+
+    "postFormSaveAsDraft" : "Save Draft",
+
+    "postFormPublish" : "Publish"
 
 }
-

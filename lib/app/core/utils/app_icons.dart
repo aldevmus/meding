@@ -1,7 +1,6 @@
 // lib/app/core/utils/app_icons.dart
 
 class AppIcons {
-
   AppIcons._();
 
   // General
@@ -10,7 +9,7 @@ class AppIcons {
 
   // ✅ CORRECTION: The general search icon now points to the correct file
 
-  static const String search = 'assets/svgs/search.svg'; 
+  static const String search = 'assets/svgs/search.svg';
 
   static const String arrowRight = 'assets/svgs/arrow_right.svg';
 
@@ -64,5 +63,18 @@ class AppIcons {
 
   static const String rolePremium = 'assets/svgs/role_premium.svg';
 
-}
+  // Community Feature
 
+  static const String communityAdd = 'assets/svgs/community_add.svg';
+
+  static const String communityPremium = 'assets/svgs/community_premium.svg';
+
+  static const String communityLike = 'assets/svgs/community_like.svg';
+
+  static const String communityComment = 'assets/svgs/community_comment.svg';
+
+  static const String communitySend = 'assets/svgs/community_send.svg';
+
+  static const String communityImageUpload =
+      'assets/svgs/community_image_upload.svg';
+}

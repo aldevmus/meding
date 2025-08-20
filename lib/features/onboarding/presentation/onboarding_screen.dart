@@ -248,10 +248,10 @@ class _OnboardingSlide extends StatelessWidget {
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter);
 
-    final darkGradient = LinearGradient(
-        colors: [const Color(0xFF1E3A8A).withOpacity(0.3), AppColors.darkBg],
-        begin: Alignment.topCenter,
-        end: Alignment.bottomCenter);
+    final darkGradient = LinearGradient(colors: [
+      const Color(0xFF1E3A8A).withValues(alpha: 0.3),
+      AppColors.darkBg
+    ], begin: Alignment.topCenter, end: Alignment.bottomCenter);
 
     final activeGradient = isDarkMode ? darkGradient : lightGradient;
 
@@ -280,7 +280,7 @@ class _OnboardingSlide extends StatelessWidget {
             item.description,
             textAlign: TextAlign.center,
             style: theme.textTheme.bodyLarge?.copyWith(
-              color: theme.colorScheme.onBackground.withOpacity(0.7),
+              color: theme.colorScheme.onBackground.withValues(alpha: 0.7),
               height: 1.6,
             ),
           ),

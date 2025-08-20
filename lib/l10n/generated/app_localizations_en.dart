@@ -305,4 +305,110 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get action_activate_now => 'Activate Now';
+
+  @override
+  String get communityTitle => 'Community';
+
+  @override
+  String get createPost => 'Create Post';
+
+  @override
+  String get search => 'Search';
+
+  @override
+  String get latest => 'Latest';
+
+  @override
+  String get trending => 'Trending';
+
+  @override
+  String get following => 'Following';
+
+  @override
+  String get medicine => 'Medicine';
+
+  @override
+  String get pharmacy => 'Pharmacy';
+
+  @override
+  String get dentistry => 'Dentistry';
+
+  @override
+  String get nursing => 'Nursing';
+
+  @override
+  String get discussion => 'Discussion';
+
+  @override
+  String get ask => 'Question';
+
+  @override
+  String get postAuthorTeacher => 'Professor';
+
+  @override
+  String get postAuthorStudent => 'Student';
+
+  @override
+  String get postTagPremium => 'Premium';
+
+  @override
+  String get postLikes => 'Like';
+
+  @override
+  String get postComments => 'Comment';
+
+  @override
+  String get postTimestampNow => 'Now';
+
+  @override
+  String get postTimestampMinutesAgo => 'Minutes ago';
+
+  @override
+  String get postTimestampHoursAgo => 'Hours ago';
+
+  @override
+  String get postTimestampDaysAgo => 'Days ago';
+
+  @override
+  String get viewPostTitle => 'Post';
+
+  @override
+  String get commentsTitle => 'Comments';
+
+  @override
+  String get addCommentHint => 'Add a comment...';
+
+  @override
+  String get createPostTitle => 'Create Post';
+
+  @override
+  String get postFormFieldTitl => 'Title';
+
+  @override
+  String get postFormFieldTitleHint => 'Write a clear title for your post...';
+
+  @override
+  String get postFormFieldContent => 'Content';
+
+  @override
+  String get postFormFieldContentHint =>
+      'Write the details of your post here...';
+
+  @override
+  String get postFormFieldCategory => 'Category';
+
+  @override
+  String get postFormFieldCategoryHint => 'E.g: Pathology, Surgery...';
+
+  @override
+  String get postFormAttachImage => 'Attach Image (optional)';
+
+  @override
+  String get postFormDragOrBrowse => 'Drag & drop an image here or browse';
+
+  @override
+  String get postFormSaveAsDraft => 'Save Draft';
+
+  @override
+  String get postFormPublish => 'Publish';
 }

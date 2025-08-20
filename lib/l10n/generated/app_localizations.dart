@@ -669,6 +669,216 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Activate Now'**
   String get action_activate_now;
+
+  /// No description provided for @communityTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Community'**
+  String get communityTitle;
+
+  /// No description provided for @createPost.
+  ///
+  /// In en, this message translates to:
+  /// **'Create Post'**
+  String get createPost;
+
+  /// No description provided for @search.
+  ///
+  /// In en, this message translates to:
+  /// **'Search'**
+  String get search;
+
+  /// No description provided for @latest.
+  ///
+  /// In en, this message translates to:
+  /// **'Latest'**
+  String get latest;
+
+  /// No description provided for @trending.
+  ///
+  /// In en, this message translates to:
+  /// **'Trending'**
+  String get trending;
+
+  /// No description provided for @following.
+  ///
+  /// In en, this message translates to:
+  /// **'Following'**
+  String get following;
+
+  /// No description provided for @medicine.
+  ///
+  /// In en, this message translates to:
+  /// **'Medicine'**
+  String get medicine;
+
+  /// No description provided for @pharmacy.
+  ///
+  /// In en, this message translates to:
+  /// **'Pharmacy'**
+  String get pharmacy;
+
+  /// No description provided for @dentistry.
+  ///
+  /// In en, this message translates to:
+  /// **'Dentistry'**
+  String get dentistry;
+
+  /// No description provided for @nursing.
+  ///
+  /// In en, this message translates to:
+  /// **'Nursing'**
+  String get nursing;
+
+  /// No description provided for @discussion.
+  ///
+  /// In en, this message translates to:
+  /// **'Discussion'**
+  String get discussion;
+
+  /// No description provided for @ask.
+  ///
+  /// In en, this message translates to:
+  /// **'Question'**
+  String get ask;
+
+  /// No description provided for @postAuthorTeacher.
+  ///
+  /// In en, this message translates to:
+  /// **'Professor'**
+  String get postAuthorTeacher;
+
+  /// No description provided for @postAuthorStudent.
+  ///
+  /// In en, this message translates to:
+  /// **'Student'**
+  String get postAuthorStudent;
+
+  /// No description provided for @postTagPremium.
+  ///
+  /// In en, this message translates to:
+  /// **'Premium'**
+  String get postTagPremium;
+
+  /// No description provided for @postLikes.
+  ///
+  /// In en, this message translates to:
+  /// **'Like'**
+  String get postLikes;
+
+  /// No description provided for @postComments.
+  ///
+  /// In en, this message translates to:
+  /// **'Comment'**
+  String get postComments;
+
+  /// No description provided for @postTimestampNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Now'**
+  String get postTimestampNow;
+
+  /// No description provided for @postTimestampMinutesAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'Minutes ago'**
+  String get postTimestampMinutesAgo;
+
+  /// No description provided for @postTimestampHoursAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'Hours ago'**
+  String get postTimestampHoursAgo;
+
+  /// No description provided for @postTimestampDaysAgo.
+  ///
+  /// In en, this message translates to:
+  /// **'Days ago'**
+  String get postTimestampDaysAgo;
+
+  /// No description provided for @viewPostTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Post'**
+  String get viewPostTitle;
+
+  /// No description provided for @commentsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Comments'**
+  String get commentsTitle;
+
+  /// No description provided for @addCommentHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Add a comment...'**
+  String get addCommentHint;
+
+  /// No description provided for @createPostTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Create Post'**
+  String get createPostTitle;
+
+  /// No description provided for @postFormFieldTitl.
+  ///
+  /// In en, this message translates to:
+  /// **'Title'**
+  String get postFormFieldTitl;
+
+  /// No description provided for @postFormFieldTitleHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Write a clear title for your post...'**
+  String get postFormFieldTitleHint;
+
+  /// No description provided for @postFormFieldContent.
+  ///
+  /// In en, this message translates to:
+  /// **'Content'**
+  String get postFormFieldContent;
+
+  /// No description provided for @postFormFieldContentHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Write the details of your post here...'**
+  String get postFormFieldContentHint;
+
+  /// No description provided for @postFormFieldCategory.
+  ///
+  /// In en, this message translates to:
+  /// **'Category'**
+  String get postFormFieldCategory;
+
+  /// No description provided for @postFormFieldCategoryHint.
+  ///
+  /// In en, this message translates to:
+  /// **'E.g: Pathology, Surgery...'**
+  String get postFormFieldCategoryHint;
+
+  /// No description provided for @postFormAttachImage.
+  ///
+  /// In en, this message translates to:
+  /// **'Attach Image (optional)'**
+  String get postFormAttachImage;
+
+  /// No description provided for @postFormDragOrBrowse.
+  ///
+  /// In en, this message translates to:
+  /// **'Drag & drop an image here or browse'**
+  String get postFormDragOrBrowse;
+
+  /// No description provided for @postFormSaveAsDraft.
+  ///
+  /// In en, this message translates to:
+  /// **'Save Draft'**
+  String get postFormSaveAsDraft;
+
+  /// No description provided for @postFormPublish.
+  ///
+  /// In en, this message translates to:
+  /// **'Publish'**
+  String get postFormPublish;
 }
 
 class _AppLocalizationsDelegate
