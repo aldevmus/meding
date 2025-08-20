@@ -72,11 +72,32 @@ class AuthService {
       },
     });
 
-    await user.sendEmailVerification();
-
+    // --- الكود البديل ---
+    final actionCodeSettings = ActionCodeSettings(
+    url: 'https://aldevmus.online/verify', // استخدم نطاقك ومسارًا من اختيارك
+    handleCodeInApp: true, // مهم جدًا للطريقة الاحترافية
+    iOSBundleId: 'com.aldevmus.meding', // استبدله بالخاص بك
+    androidPackageName: 'com.aldevmus.meding', // استبدله بالخاص بك
+     );
+    await user.sendEmailVerification(actionCodeSettings);
+   // --- نهاية الكود البديل --- 
     return user;
   }
 
+// --- أضف هذه الدالة الجديدة بالكامل ---
+Future<void> resendVerificationEmail() async {
+  final user = _auth.currentUser;
+  if (user != null && !user.emailVerified) {
+    final actionCodeSettings = ActionCodeSettings(
+      url: 'https://aldevmus.com/verify', // نفس الرابط السابق
+      handleCodeInApp: true,
+      iOSBundleId: 'com.aldevmus.meding', // استبدله بالخاص بك
+      androidPackageName: 'com.aldevmus.meding', // استبدله بالخاص بك
+    );
+    await user.sendEmailVerification(actionCodeSettings);
+  }
+}
+// --- نهاية الدالة الجديدة ---
   // دالة تسجيل الدخول
 
   Future<User?> loginUser({

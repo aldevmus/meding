@@ -72,7 +72,7 @@ class GlassmorphismAppBar extends StatelessWidget
                         ),
                         const SizedBox(width: 8),
                         Text(
-                          "إنشاء",
+                        "ْْإنشاء منشور",
                           style: theme.textTheme.labelLarge?.copyWith(
                             color: Colors.white,
                             fontSize: 14,

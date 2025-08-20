@@ -6,10 +6,11 @@ import 'package:meding_app/app/core/theme/app_theme.dart';
 
 import 'package:meding_app/services/deep_link_service.dart';
 
-import 'package:meding_app/features/splash/presentation/splash_screen.dart';
 import 'package:meding_app/l10n/generated/app_localizations.dart';
 
 import 'firebase_options.dart';
+
+import 'package:meding_app/app/routes/app_router.dart';
 
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
@@ -106,8 +107,11 @@ class _MedingAppState extends State<MedingApp> with WidgetsBindingObserver {
       locale: _locale,
 
       debugShowCheckedModeBanner: false,
+      
+      initialRoute: AppRouter.splash,
 
-      home: const SplashScreen(),
+      routes: AppRouter.getRoutes(),
+
     );
   }
 }

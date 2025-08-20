@@ -8,6 +8,9 @@ import 'package:meding_app/features/profile/presentation/widgets/profile_app_bar
 
 import 'package:meding_app/features/profile/presentation/widgets/profile_header.dart';
 
+// ADD THIS AT THE TOP OF THE FILE
+enum ProfileViewType { myPublisher, otherPublisher, myStudent }
+
 class ProfileScreen extends StatefulWidget {
   final String? userId;
 
@@ -22,6 +25,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   late bool _isMyProfile;
 
+  // ✅ ADD THIS NEW VARIABLE
+  ProfileViewType _currentViewType = ProfileViewType.myPublisher;
+
   @override
   void initState() {
     super.initState();
@@ -31,26 +37,47 @@ class _ProfileScreenState extends State<ProfileScreen> {
     _loadProfileData();
   }
 
+  // REPLACE THE OLD METHOD WITH THIS
   void _loadProfileData() {
-    // To test the student view, change the 'userType' to 'student'
-
-    if (_isMyProfile) {
-      // My Profile
-
-      _profileData = UserProfile(
-          id: 'my_id',
-          name: 'Dr. Youssef Ben Ali',
-          userType: 'publisher',
-          isVerified: true);
-    } else {
-      // Other User's Profile
-
-      _profileData = UserProfile(
-          id: 'some_other_id',
-          name: 'Dr. Youssef Ben Ali',
-          userType: 'publisher',
-          isVerified: true);
+    switch (_currentViewType) {
+      case ProfileViewType.myPublisher:
+        _profileData = UserProfile(id: 'my_id', name: 'Dr. Youssef Ben Ali', userType: 'publisher', isVerified: true);
+        _isMyProfile = true;
+        break;
+      case ProfileViewType.otherPublisher:
+        _profileData = UserProfile(id: 'publisher_id', name: 'Dr. Youssef Ben Ali', userType: 'publisher', isVerified: true);
+        _isMyProfile = false;
+        break;
+      case ProfileViewType.myStudent:
+        _profileData = UserProfile(id: 'my_student_id', name: 'Ahmed Khaled', userType: 'student');
+        _isMyProfile = true;
+        break;
     }
+  }
+  
+  // ✅ ADD THIS NEW METHOD
+  void _switchView(ProfileViewType newView) {
+    setState(() {
+      _currentViewType = newView;
+      _loadProfileData();
+    });
+  }
+
+  // ✅ AND ADD THIS NEW WIDGET-BUILDING METHOD
+  Widget _buildDebugSwitcher() {
+    return Container(
+      color: Colors.yellow.shade100,
+      padding: const EdgeInsets.all(8.0),
+      child: Wrap(
+        alignment: WrapAlignment.center,
+        spacing: 8.0,
+        children: [
+          ElevatedButton(onPressed: () => _switchView(ProfileViewType.myPublisher), child: const Text("My Profile (Pub)")),
+          ElevatedButton(onPressed: () => _switchView(ProfileViewType.otherPublisher), child: const Text("Other's (Pub)")),
+          ElevatedButton(onPressed: () => _switchView(ProfileViewType.myStudent), child: const Text("My Profile (Stu)")),
+        ],
+      ),
+    );
   }
 
   @override
@@ -70,7 +97,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
             // Sliver 1: The AppBar that is always visible at the top.
 
             ProfileSliverAppBar(user: _profileData, isMyProfile: _isMyProfile),
-
+            
+             SliverToBoxAdapter(child: _buildDebugSwitcher()),
+             
             // Sliver 2: The header content (avatar, stats) that scrolls up and disappears.
 
             SliverToBoxAdapter(

@@ -10,8 +10,6 @@ import 'package:meding_app/l10n/generated/app_localizations.dart';
 
 import 'package:meding_app/app/core/theme/app_colors.dart';
 
-import 'package:meding_app/features/auth/presentation/screens/login_screen.dart';
-
 import 'package:meding_app/features/auth/services/auth_service.dart';
 
 import 'package:intl/intl.dart';
@@ -19,6 +17,8 @@ import 'package:intl/intl.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'package:firebase_auth/firebase_auth.dart';
+
+import 'package:meding_app/app/routes/app_router.dart';
 
 enum AccountType { student, professor }
 
@@ -119,6 +119,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
         _passwordStrengthColor = AppColors.error;
 
         _passwordStrengthText = localizations.passwordStrengthWeak;
+
       } else if (strength < 0.8) {
         _passwordStrengthColor = AppColors.warning;
 
@@ -163,10 +164,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
             content: Text(localizations.accountCreatedSuccessfully),
             backgroundColor: AppColors.success));
 
-        Navigator.of(context).pushAndRemoveUntil(
-          MaterialPageRoute(builder: (_) => const LoginScreen()),
-          (route) => false,
-        );
+        // نوجهه مباشرة لشاشة التفعيل بعد إنشاء الحساب
+        Navigator.of(context)
+            .pushNamedAndRemoveUntil(AppRouter.verifyEmail, (route) => false);
       }
     } on FirebaseAuthException catch (e) {
       String errorMessage = localizations.firebaseErrorGeneric;
@@ -308,7 +308,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: systemUiOverlayStyle,
       child: Scaffold(
-        backgroundColor: theme.colorScheme.background,
+        backgroundColor: theme.colorScheme.surface,
         body: SafeArea(
           child: SingleChildScrollView(
             child: Padding(
@@ -830,8 +830,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               if (Navigator.canPop(context)) {
                 Navigator.of(context).pop();
               } else {
-                Navigator.of(context).pushReplacement(
-                    MaterialPageRoute(builder: (_) => const LoginScreen()));
+                Navigator.of(context).pushReplacementNamed(AppRouter.login);
               }
             },
             child: Text(localizations.loginNow,

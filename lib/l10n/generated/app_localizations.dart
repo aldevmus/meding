@@ -879,6 +879,66 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Publish'**
   String get postFormPublish;
+
+  /// No description provided for @verifyEmailTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'One last step!'**
+  String get verifyEmailTitle;
+
+  /// No description provided for @verifyEmailBody.
+  ///
+  /// In en, this message translates to:
+  /// **'We have sent an activation link to your email:'**
+  String get verifyEmailBody;
+
+  /// No description provided for @resendEmailButton.
+  ///
+  /// In en, this message translates to:
+  /// **'Resend Link'**
+  String get resendEmailButton;
+
+  /// No description provided for @resendEmailCountdown.
+  ///
+  /// In en, this message translates to:
+  /// **'Resend in {countdown}s'**
+  String resendEmailCountdown(Object countdown);
+
+  /// No description provided for @backToSignIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Back to Sign In'**
+  String get backToSignIn;
+
+  /// No description provided for @emailVerificationSent.
+  ///
+  /// In en, this message translates to:
+  /// **'Verification link sent to your email'**
+  String get emailVerificationSent;
+
+  /// No description provided for @emailVerificationError.
+  ///
+  /// In en, this message translates to:
+  /// **'An error occurred while sending the email'**
+  String get emailVerificationError;
+
+  /// No description provided for @successTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Successfully Verified!'**
+  String get successTitle;
+
+  /// No description provided for @successBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to Meding. You are now ready to start your educational journey and explore the world of medicine.'**
+  String get successBody;
+
+  /// No description provided for @ctaStartLearning.
+  ///
+  /// In en, this message translates to:
+  /// **'Start Learning Now'**
+  String get ctaStartLearning;
 }
 
 class _AppLocalizationsDelegate

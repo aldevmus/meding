@@ -58,6 +58,7 @@ dependencies:
   
   flutter_gen: ^5.11.0
 
+  lottie: ^3.1.2
 #================ DEV DEPENDENCIES ================#
 
 dev_dependencies:
@@ -91,6 +92,8 @@ flutter:
     - assets/svgs/
 
     - assets/icon/
+
+    - assets/lottie/
 
   # --- الخطوط (Fonts) ---
 
@@ -159,4 +162,6 @@ flutter_native_splash:
 flutter_launcher_icons:
 
   android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
 

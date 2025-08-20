@@ -14,9 +14,7 @@ import 'package:meding_app/l10n/generated/app_localizations.dart';
 
 import 'package:firebase_auth/firebase_auth.dart';
 
-// TODO: قم باستيراد شاشة Home Screen عندما تصبح جاهزة
-
-import 'package:meding_app/features/splash/presentation/splash_screen.dart';
+import 'package:meding_app/app/routes/app_router.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -71,10 +69,13 @@ class _LoginScreenState extends State<LoginScreen> {
       );
 
       if (user != null && mounted) {
-        // TODO: استبدل `SplashScreen` بـ `HomeScreen` بعد إنشائها
 
-        Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: (context) => const SplashScreen()));
+        // تحقق من حالة التفعيل قبل التوجيه
+      if (user.emailVerified) {
+        Navigator.of(context).pushReplacementNamed(AppRouter.home); // أو '/home'
+      } else {
+        Navigator.of(context).pushReplacementNamed(AppRouter.verifyEmail);
+        }  
       }
     } on FirebaseAuthException {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
@@ -200,7 +201,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: systemUiOverlayStyle,
       child: Scaffold(
-        backgroundColor: theme.colorScheme.background,
+        backgroundColor: theme.colorScheme.surface,
         body: SafeArea(
           child: SingleChildScrollView(
             child: Padding(

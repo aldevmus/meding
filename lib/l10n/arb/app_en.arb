@@ -258,6 +258,26 @@
 
     "postFormSaveAsDraft" : "Save Draft",
 
-    "postFormPublish" : "Publish"
+    "postFormPublish" : "Publish",
+
+    "verifyEmailTitle": "One last step!",
+
+    "verifyEmailBody": "We have sent an activation link to your email:",
+
+    "resendEmailButton": "Resend Link",
+
+    "resendEmailCountdown": "Resend in {countdown}s",
+
+    "backToSignIn": "Back to Sign In",
+
+    "emailVerificationSent": "Verification link sent to your email",
+
+    "emailVerificationError": "An error occurred while sending the email",
+
+    "successTitle": "Successfully Verified!",
+
+    "successBody": "Welcome to Meding. You are now ready to start your educational journey and explore the world of medicine.",
+
+    "ctaStartLearning": "Start Learning Now"
 
 }

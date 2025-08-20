@@ -4,6 +4,8 @@ import 'package:app_links/app_links.dart';
 
 import 'package:flutter/material.dart';
 
+import 'package:firebase_auth/firebase_auth.dart';
+
 class DeepLinkService {
   // مكتبة AppLinks للاستماع للروابط
 
@@ -65,26 +67,34 @@ class DeepLinkService {
     debugPrint('---------------------');
 
     // لاحقًا، سنضيف هنا منطق التوجيه الفعلي
-
     // مثال على كيفية استخدام المفتاح العام للتوجيه:
-
     /*
-
     if (uri.path.contains('/password-reset')) {
-
       navigatorKey.currentState?.push(
-
         MaterialPageRoute(
-
           builder: (context) => PasswordResetScreen(token: uri.queryParameters['token']),
-
         ),
-
       );
-
     }
-
     */
+
+  // تحقق من أن الرابط هو رابط التفعيل الذي نريده
+  if (uri.host == 'aldevmus.com' && uri.path == '/verify') {
+    debugPrint('Verification App Link detected!');
+    _finalizeVerification();
+  }
+}
+
+// أضف هذه الدالة المساعدة الجديدة تحت دالة _handleLink
+void _finalizeVerification() async {
+  await FirebaseAuth.instance.currentUser?.reload();
+  final user = FirebaseAuth.instance.currentUser;
+
+  if (user != null && user.emailVerified) {
+    debugPrint('Email is now verified! Navigating to success screen.');
+    navigatorKey.currentState?.pushNamedAndRemoveUntil('/verification-success', (route) => false);
+  }
+
   }
 
   /// تقوم هذه الدالة بإلغاء الاشتراك في استماع الروابط لمنع تسرب الذاكرة.

@@ -50,7 +50,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
       apiKey: 'AIzaSyAjJk2DL2-OtFb_qQAnDykwbvqkc82iuX4',
-      iosBundleId: 'com.meding.aldevmus',
+      iosBundleId: 'com.aldevmus.meding',
       appId: '1:975822733387:ios:6a5d4856557806035a0dce',
       storageBucket: 'meding-aldevmus.firebasestorage.app',
       messagingSenderId: '975822733387',

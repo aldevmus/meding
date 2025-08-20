@@ -116,10 +116,10 @@ class _PublisherHeader extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 12),
-          const Text(
+          Text(
             "أستاذ في كلية الطب، متخصص في علم التشريح والأعصاب. أشارك هنا ملفات ودروس لمساعدة الطلاب على التفوق.",
             style: TextStyle(
-                color: Colors.black87,
+                color: Theme.of(context).colorScheme.onSurface,
                 height: 1.5,
                 fontFamily: 'Cairo',
                 fontSize: 15),
@@ -331,7 +331,7 @@ class _LevelBadge extends StatelessWidget {
       decoration: BoxDecoration(
           color: Theme.of(context)
               .colorScheme
-              .surfaceVariant
+              .surfaceContainerLow
               .withValues(alpha: 0.6),
           borderRadius: BorderRadius.circular(20)),
       child: Row(
@@ -397,7 +397,7 @@ class _XpBar extends StatelessWidget {
             height: 8,
             color: Theme.of(context)
                 .colorScheme
-                .surfaceVariant
+                .surfaceContainerLow
                 .withValues(alpha: 0.6),
             alignment: Alignment.centerLeft,
             child: FractionallySizedBox(

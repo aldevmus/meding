@@ -9,11 +9,26 @@ class CommunityFilterChips extends StatefulWidget {
 }
 
 class _CommunityFilterChipsState extends State<CommunityFilterChips> {
+  // State for primary filters
   int _selectedPrimaryFilter = 0;
   final List<String> _primaryFilters = ["الأحدث", "الرائج", "أتابعه"];
 
+  // ✅ State for secondary category filters
+  int? _selectedCategoryFilter;
+  final List<String> _categoryFilters = ["طب", "صيدلة", "طب أسنان", "تمريض", "نقاش"];
+
   @override
   Widget build(BuildContext context) {
+    return Column(
+      children: [
+        _buildPrimaryFilters(),
+        const SizedBox(height: 12), // Space between the two filter rows
+        _buildCategoryFilters(), // ✅ The secondary filters are back
+      ],
+    );
+  }
+
+  Widget _buildPrimaryFilters() {
     final theme = Theme.of(context);
     final isDarkMode = theme.brightness == Brightness.dark;
     final glassColor = isDarkMode
@@ -39,14 +54,10 @@ class _CommunityFilterChipsState extends State<CommunityFilterChips> {
               final isSelected = _selectedPrimaryFilter == index;
               return Expanded(
                 child: Material(
-                  color: isSelected
-                      ? theme.colorScheme.surface
-                      : Colors.transparent,
+                  color: isSelected ? theme.colorScheme.surface : Colors.transparent,
                   borderRadius: BorderRadius.circular(10),
                   elevation: isSelected ? 4 : 0,
-                  shadowColor: isSelected
-                      ? Colors.black.withOpacity(0.1)
-                      : Colors.transparent,
+                  shadowColor: isSelected ? Colors.black.withOpacity(0.1) : Colors.transparent,
                   child: InkWell(
                     onTap: () => setState(() => _selectedPrimaryFilter = index),
                     borderRadius: BorderRadius.circular(10),
@@ -71,6 +82,49 @@ class _CommunityFilterChipsState extends State<CommunityFilterChips> {
             }),
           ),
         ),
+      ),
+    );
+  }
+
+  // ✅ This function builds the scrollable category chips
+  Widget _buildCategoryFilters() {
+    final theme = Theme.of(context);
+    return SizedBox(
+      height: 36,
+      child: ListView.separated(
+        scrollDirection: Axis.horizontal,
+        itemCount: _categoryFilters.length,
+        // Removes the overscroll glow for a cleaner look
+        physics: const BouncingScrollPhysics(), 
+        clipBehavior: Clip.none, // Allows shadows to render outside the box
+        separatorBuilder: (context, index) => const SizedBox(width: 8),
+        itemBuilder: (context, index) {
+          final isSelected = _selectedCategoryFilter == index;
+          return ChoiceChip(
+            label: Text(_categoryFilters[index]),
+            selected: isSelected,
+            onSelected: (selected) {
+              setState(() {
+                _selectedCategoryFilter = selected ? index : null;
+              });
+            },
+            selectedColor: theme.colorScheme.surface,
+            labelStyle: TextStyle(
+              fontWeight: FontWeight.w600,
+              color: isSelected ? theme.primaryColor : theme.colorScheme.onSurface.withOpacity(0.7),
+            ),
+            backgroundColor: theme.colorScheme.surface.withOpacity(0.5),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+              side: BorderSide(
+                  color: isSelected ? theme.primaryColor : Colors.transparent),
+            ),
+            elevation: isSelected ? 2 : 0,
+            shadowColor: Colors.black.withOpacity(0.1),
+            showCheckmark: false,
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+          );
+        },
       ),
     );
   }

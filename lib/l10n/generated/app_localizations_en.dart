@@ -411,4 +411,39 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get postFormPublish => 'Publish';
+
+  @override
+  String get verifyEmailTitle => 'One last step!';
+
+  @override
+  String get verifyEmailBody =>
+      'We have sent an activation link to your email:';
+
+  @override
+  String get resendEmailButton => 'Resend Link';
+
+  @override
+  String resendEmailCountdown(Object countdown) {
+    return 'Resend in ${countdown}s';
+  }
+
+  @override
+  String get backToSignIn => 'Back to Sign In';
+
+  @override
+  String get emailVerificationSent => 'Verification link sent to your email';
+
+  @override
+  String get emailVerificationError =>
+      'An error occurred while sending the email';
+
+  @override
+  String get successTitle => 'Successfully Verified!';
+
+  @override
+  String get successBody =>
+      'Welcome to Meding. You are now ready to start your educational journey and explore the world of medicine.';
+
+  @override
+  String get ctaStartLearning => 'Start Learning Now';
 }

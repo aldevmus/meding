@@ -188,7 +188,96 @@
 
     "action_activate_sub_subtitle": "للوصول الكامل لميزات التطبيق، يرجى تفعيل اشتراكك.",
 
-    "action_activate_now": "تفعيل الآن"
+    "action_activate_now": "تفعيل الآن",
+
+     "communityTitle": "المجتمع",
+
+     "createPost": "إنشاء منشور",
+
+     "search": "بحث",
+
+        "latest": "الأحدث",
+
+        "trending": "الرائج",
+
+        "following": "أتابعه",
+
+        "medicine": "طب",
+
+        "pharmacy": "صيدلة",
+
+        "dentistry": "طب أسنان",
+
+        "nursing": "تمريض",
+
+        "discussion": "نقاش",
+
+        "ask": "سؤال",
+
+        "postAuthorTeacher": "أستاذ",
+
+        "postAuthorStudent": "طالب",
+
+        "postTagPremium": "متميز",
+
+        "postLikes": "إعجاب",
+
+        "postComments": "تعليق",
+
+        "postTimestampNow": "الآن",
+
+        "postTimestampMinutesAgo": "منذ دقائق",
+
+        "postTimestampHoursAgo": "منذ ساعات",
+
+        "postTimestampDaysAgo": "منذ أيام",
+
+        "viewPostTitle": "المنشور",
+
+        "commentsTitle": "التعليقات",
+
+        "addCommentHint": "أضف تعليقاً...",
+
+        "createPostTitle": "إنشاء منشور",
+
+        "postFormFieldTitle": "العنوان",
+
+        "postFormFieldTitleHint": "اكتب عنواناً واضحاً لمنشورك...",
+
+        "postFormFieldContent": "المحتوى",
+
+        "postFormFieldContentHint": "اكتب تفاصيل منشورك هنا...",
+
+        "postFormFieldCategory": "التصنيف",
+
+        "postFormFieldCategoryHint": "مثال: علم الأمراض, جراحة...",
+
+        "postFormAttachImage": "إرفاق صورة (اختياري)",
+
+        "postFormDragOrBrowse": "اسحب وأفلت الصورة هنا أو تصفح",
+
+        "postFormSaveAsDraft": "حفظ كمسودة",
+        
+        "postFormPublish": "نشر",
+
+        "verifyEmailTitle": "خطوة أخيرة!",
+        
+        "verifyEmailBody": "لقد أرسلنا رابط تفعيل إلى بريدك الإلكتروني:",
+        
+        "resendEmailButton": "إعادة إرسال الرابط",
+        
+        "resendEmailCountdown": "إعادة الإرسال بعد {countdown} ثانية",
+        
+        "backToSignIn": "العودة لتسجيل الدخول",
+        
+        "emailVerificationSent": "تم إرسال رابط التفعيل إلى بريدك الإلكتروني",
+        
+        "emailVerificationError": "حدث خطأ أثناء إرسال البريد",
+
+        "successTitle": "تم التفعيل بنجاح!",
+
+        "successBody": "أهلاً بك في Meding. أنت الآن جاهز لبدء رحلتك التعليمية واستكشاف عالم الطب.",
+
+        "ctaStartLearning": "ابدأ التعلم الآن"
 
 }
-

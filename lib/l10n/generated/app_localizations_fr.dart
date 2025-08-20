@@ -318,34 +318,34 @@ class AppLocalizationsFr extends AppLocalizations {
   String get action_activate_now => 'Activer';
 
   @override
-  String get communityTitle => 'Community';
+  String get communityTitle => 'Communauté';
 
   @override
-  String get createPost => 'Create Post';
+  String get createPost => 'Créer';
 
   @override
-  String get search => 'Search';
+  String get search => 'Rechercher';
 
   @override
-  String get latest => 'Latest';
+  String get latest => 'Récent';
 
   @override
-  String get trending => 'Trending';
+  String get trending => 'Populaire';
 
   @override
-  String get following => 'Following';
+  String get following => 'Suivis';
 
   @override
-  String get medicine => 'Medicine';
+  String get medicine => 'Médecine';
 
   @override
-  String get pharmacy => 'Pharmacy';
+  String get pharmacy => 'Pharmacie';
 
   @override
-  String get dentistry => 'Dentistry';
+  String get dentistry => 'Dentisterie';
 
   @override
-  String get nursing => 'Nursing';
+  String get nursing => 'Soins infirmiers';
 
   @override
   String get discussion => 'Discussion';
@@ -354,72 +354,109 @@ class AppLocalizationsFr extends AppLocalizations {
   String get ask => 'Question';
 
   @override
-  String get postAuthorTeacher => 'Professor';
+  String get postAuthorTeacher => 'Professeur';
 
   @override
-  String get postAuthorStudent => 'Student';
+  String get postAuthorStudent => 'Étudiant';
 
   @override
   String get postTagPremium => 'Premium';
 
   @override
-  String get postLikes => 'Like';
+  String get postLikes => 'J\'aime';
 
   @override
-  String get postComments => 'Comment';
+  String get postComments => 'Commentaires';
 
   @override
-  String get postTimestampNow => 'Now';
+  String get postTimestampNow => 'Maintenant';
 
   @override
-  String get postTimestampMinutesAgo => 'Minutes ago';
+  String get postTimestampMinutesAgo => 'Il y a quelques minutes';
 
   @override
-  String get postTimestampHoursAgo => 'Hours ago';
+  String get postTimestampHoursAgo => 'Il y a quelques heures';
 
   @override
-  String get postTimestampDaysAgo => 'Days ago';
+  String get postTimestampDaysAgo => 'Il y a quelques jours';
 
   @override
-  String get viewPostTitle => 'Post';
+  String get viewPostTitle => 'Publication';
 
   @override
-  String get commentsTitle => 'Comments';
+  String get commentsTitle => 'Commentaires';
 
   @override
-  String get addCommentHint => 'Add a comment...';
+  String get addCommentHint => 'Ajoutez un commentaire...';
 
   @override
-  String get createPostTitle => 'Create Post';
+  String get createPostTitle => 'Créer une publication';
 
   @override
   String get postFormFieldTitl => 'Title';
 
   @override
-  String get postFormFieldTitleHint => 'Write a clear title for your post...';
+  String get postFormFieldTitleHint =>
+      'Écrivez un titre clair pour votre publication...';
 
   @override
-  String get postFormFieldContent => 'Content';
+  String get postFormFieldContent => 'Contenu';
 
   @override
   String get postFormFieldContentHint =>
-      'Write the details of your post here...';
+      'Écrivez les détails de votre publication ici...';
 
   @override
-  String get postFormFieldCategory => 'Category';
+  String get postFormFieldCategory => 'Catégorie';
 
   @override
-  String get postFormFieldCategoryHint => 'E.g: Pathology, Surgery...';
+  String get postFormFieldCategoryHint => 'Ex: Pathologie, Chirurgie...';
 
   @override
-  String get postFormAttachImage => 'Attach Image (optional)';
+  String get postFormAttachImage => 'Joindre une image (optionnel)';
 
   @override
-  String get postFormDragOrBrowse => 'Drag & drop an image here or browse';
+  String get postFormDragOrBrowse => 'Glissez-déposez une image ou parcourez';
 
   @override
-  String get postFormSaveAsDraft => 'Save Draft';
+  String get postFormSaveAsDraft => 'Enregistrer le brouillon';
 
   @override
-  String get postFormPublish => 'Publish';
+  String get postFormPublish => 'Publier';
+
+  @override
+  String get verifyEmailTitle => 'Une dernière étape !';
+
+  @override
+  String get verifyEmailBody =>
+      'Nous avons envoyé un lien d\'activation à votre email:';
+
+  @override
+  String get resendEmailButton => 'Renvoyer le lien';
+
+  @override
+  String resendEmailCountdown(Object countdown) {
+    return 'Renvoyer dans ${countdown}s';
+  }
+
+  @override
+  String get backToSignIn => 'Retour à la connexion';
+
+  @override
+  String get emailVerificationSent =>
+      'Lien de vérification envoyé à votre email';
+
+  @override
+  String get emailVerificationError =>
+      'Une erreur est survenue lors de l\'envoi de l\'email';
+
+  @override
+  String get successTitle => 'Vérification réussie !';
+
+  @override
+  String get successBody =>
+      'Bienvenue sur Meding. Vous êtes maintenant prêt à commencer votre parcours éducatif et à explorer le monde de la médecine.';
+
+  @override
+  String get ctaStartLearning => 'Commencer à apprendre';
 }

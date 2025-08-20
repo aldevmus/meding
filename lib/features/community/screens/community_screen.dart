@@ -67,7 +67,7 @@ class CommunityScreen extends StatelessWidget {
             ),
             children: [
               const CommunityFilterChips(),
-              const SizedBox(height: 16),
+              const SizedBox(height: 8),
               ListView.separated(
                 physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
@@ -75,7 +75,7 @@ class CommunityScreen extends StatelessWidget {
                 separatorBuilder: (context, index) =>
                     const SizedBox(height: 16),
                 itemBuilder: (context, index) {
-                  return PostCard(post: posts[index]);
+                  return PostCard(post: posts.elementAt(index));
                 },
               ),
             ],

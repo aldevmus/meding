@@ -214,7 +214,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                   curve: Curves.easeInOut,
                                 );
                               },
-                              child: Text(localizations.nextButton ?? "Next"),
+                              child: Text(localizations.nextButton),
                             ),
                     ),
                   ),
@@ -273,14 +273,14 @@ class _OnboardingSlide extends StatelessWidget {
             item.title,
             textAlign: TextAlign.center,
             style: theme.textTheme.displayMedium
-                ?.copyWith(color: theme.colorScheme.onBackground),
+                ?.copyWith(color: theme.colorScheme.onSurface),
           ),
           const SizedBox(height: 16),
           Text(
             item.description,
             textAlign: TextAlign.center,
             style: theme.textTheme.bodyLarge?.copyWith(
-              color: theme.colorScheme.onBackground.withValues(alpha: 0.7),
+              color: theme.colorScheme.onSurface.withValues(alpha: 0.7),
               height: 1.6,
             ),
           ),

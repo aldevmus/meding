@@ -188,7 +188,97 @@
 
     "action_activate_sub_subtitle": "Pour un accès complet, veuillez activer votre abonnement.",
 
-    "action_activate_now": "Activer"
+    "action_activate_now": "Activer",
+
+        "communityTitle": "Communauté",
+
+        "createPost": "Créer",
+
+        "search": "Rechercher",
+
+        "latest": "Récent",
+
+        "trending": "Populaire",
+
+        "following": "Suivis",
+
+        "medicine": "Médecine",
+
+        "pharmacy": "Pharmacie",
+
+        "dentistry": "Dentisterie"
+        ,
+        "nursing": "Soins infirmiers",
+
+        "discussion": "Discussion",
+
+        "ask": "Question",
+
+        "postAuthorTeacher": "Professeur",
+
+        "postAuthorStudent": "Étudiant",
+
+        "postTagPremium": "Premium",
+
+        "postLikes": "J'aime",
+
+        "postComments": "Commentaires",
+
+        "postTimestampNow": "Maintenant",
+
+        "postTimestampMinutesAgo": "Il y a quelques minutes",
+
+        "postTimestampHoursAgo": "Il y a quelques heures",
+
+        "postTimestampDaysAgo": "Il y a quelques jours",
+
+        "viewPostTitle": "Publication",
+
+        "commentsTitle": "Commentaires",
+
+        "addCommentHint": "Ajoutez un commentaire...",
+
+        "createPostTitle": "Créer une publication",
+
+        "postFormFieldTitle": "Titre",
+
+        "postFormFieldTitleHint": "Écrivez un titre clair pour votre publication...",
+
+        "postFormFieldContent": "Contenu",
+
+        "postFormFieldContentHint": "Écrivez les détails de votre publication ici...",
+
+        "postFormFieldCategory": "Catégorie",
+
+        "postFormFieldCategoryHint": "Ex: Pathologie, Chirurgie...",
+
+        "postFormAttachImage": "Joindre une image (optionnel)",
+
+        "postFormDragOrBrowse": "Glissez-déposez une image ou parcourez",
+
+        "postFormSaveAsDraft": "Enregistrer le brouillon",
+        
+        "postFormPublish": "Publier",
+
+        "verifyEmailTitle": "Une dernière étape !",
+
+        "verifyEmailBody": "Nous avons envoyé un lien d'activation à votre email:",
+
+        "resendEmailButton": "Renvoyer le lien",
+
+        "resendEmailCountdown": "Renvoyer dans {countdown}s",
+
+        "backToSignIn": "Retour à la connexion",
+
+        "emailVerificationSent": "Lien de vérification envoyé à votre email",
+
+        "emailVerificationError": "Une erreur est survenue lors de l'envoi de l'email",
+
+        "successTitle": "Vérification réussie !",
+
+        "successBody": "Bienvenue sur Meding. Vous êtes maintenant prêt à commencer votre parcours éducatif et à explorer le monde de la médecine.",
+
+        "ctaStartLearning": "Commencer à apprendre"
 
 }
 

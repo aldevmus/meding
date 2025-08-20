@@ -307,108 +307,141 @@ class AppLocalizationsAr extends AppLocalizations {
   String get action_activate_now => 'تفعيل الآن';
 
   @override
-  String get communityTitle => 'Community';
+  String get communityTitle => 'المجتمع';
 
   @override
-  String get createPost => 'Create Post';
+  String get createPost => 'إنشاء منشور';
 
   @override
-  String get search => 'Search';
+  String get search => 'بحث';
 
   @override
-  String get latest => 'Latest';
+  String get latest => 'الأحدث';
 
   @override
-  String get trending => 'Trending';
+  String get trending => 'الرائج';
 
   @override
-  String get following => 'Following';
+  String get following => 'أتابعه';
 
   @override
-  String get medicine => 'Medicine';
+  String get medicine => 'طب';
 
   @override
-  String get pharmacy => 'Pharmacy';
+  String get pharmacy => 'صيدلة';
 
   @override
-  String get dentistry => 'Dentistry';
+  String get dentistry => 'طب أسنان';
 
   @override
-  String get nursing => 'Nursing';
+  String get nursing => 'تمريض';
 
   @override
-  String get discussion => 'Discussion';
+  String get discussion => 'نقاش';
 
   @override
-  String get ask => 'Question';
+  String get ask => 'سؤال';
 
   @override
-  String get postAuthorTeacher => 'Professor';
+  String get postAuthorTeacher => 'أستاذ';
 
   @override
-  String get postAuthorStudent => 'Student';
+  String get postAuthorStudent => 'طالب';
 
   @override
-  String get postTagPremium => 'Premium';
+  String get postTagPremium => 'متميز';
 
   @override
-  String get postLikes => 'Like';
+  String get postLikes => 'إعجاب';
 
   @override
-  String get postComments => 'Comment';
+  String get postComments => 'تعليق';
 
   @override
-  String get postTimestampNow => 'Now';
+  String get postTimestampNow => 'الآن';
 
   @override
-  String get postTimestampMinutesAgo => 'Minutes ago';
+  String get postTimestampMinutesAgo => 'منذ دقائق';
 
   @override
-  String get postTimestampHoursAgo => 'Hours ago';
+  String get postTimestampHoursAgo => 'منذ ساعات';
 
   @override
-  String get postTimestampDaysAgo => 'Days ago';
+  String get postTimestampDaysAgo => 'منذ أيام';
 
   @override
-  String get viewPostTitle => 'Post';
+  String get viewPostTitle => 'المنشور';
 
   @override
-  String get commentsTitle => 'Comments';
+  String get commentsTitle => 'التعليقات';
 
   @override
-  String get addCommentHint => 'Add a comment...';
+  String get addCommentHint => 'أضف تعليقاً...';
 
   @override
-  String get createPostTitle => 'Create Post';
+  String get createPostTitle => 'إنشاء منشور';
 
   @override
   String get postFormFieldTitl => 'Title';
 
   @override
-  String get postFormFieldTitleHint => 'Write a clear title for your post...';
+  String get postFormFieldTitleHint => 'اكتب عنواناً واضحاً لمنشورك...';
 
   @override
-  String get postFormFieldContent => 'Content';
+  String get postFormFieldContent => 'المحتوى';
 
   @override
-  String get postFormFieldContentHint =>
-      'Write the details of your post here...';
+  String get postFormFieldContentHint => 'اكتب تفاصيل منشورك هنا...';
 
   @override
-  String get postFormFieldCategory => 'Category';
+  String get postFormFieldCategory => 'التصنيف';
 
   @override
-  String get postFormFieldCategoryHint => 'E.g: Pathology, Surgery...';
+  String get postFormFieldCategoryHint => 'مثال: علم الأمراض, جراحة...';
 
   @override
-  String get postFormAttachImage => 'Attach Image (optional)';
+  String get postFormAttachImage => 'إرفاق صورة (اختياري)';
 
   @override
-  String get postFormDragOrBrowse => 'Drag & drop an image here or browse';
+  String get postFormDragOrBrowse => 'اسحب وأفلت الصورة هنا أو تصفح';
 
   @override
-  String get postFormSaveAsDraft => 'Save Draft';
+  String get postFormSaveAsDraft => 'حفظ كمسودة';
 
   @override
-  String get postFormPublish => 'Publish';
+  String get postFormPublish => 'نشر';
+
+  @override
+  String get verifyEmailTitle => 'خطوة أخيرة!';
+
+  @override
+  String get verifyEmailBody => 'لقد أرسلنا رابط تفعيل إلى بريدك الإلكتروني:';
+
+  @override
+  String get resendEmailButton => 'إعادة إرسال الرابط';
+
+  @override
+  String resendEmailCountdown(Object countdown) {
+    return 'إعادة الإرسال بعد $countdown ثانية';
+  }
+
+  @override
+  String get backToSignIn => 'العودة لتسجيل الدخول';
+
+  @override
+  String get emailVerificationSent =>
+      'تم إرسال رابط التفعيل إلى بريدك الإلكتروني';
+
+  @override
+  String get emailVerificationError => 'حدث خطأ أثناء إرسال البريد';
+
+  @override
+  String get successTitle => 'تم التفعيل بنجاح!';
+
+  @override
+  String get successBody =>
+      'أهلاً بك في Meding. أنت الآن جاهز لبدء رحلتك التعليمية واستكشاف عالم الطب.';
+
+  @override
+  String get ctaStartLearning => 'ابدأ التعلم الآن';
 }
